@@ -1,13 +1,23 @@
 // User variables:
-$accent: orange;
-$text: #333;
-$default-font: "roboto-example", sans-serif;
+$accent: #00C6D5; ;
+$white: #fff;
+$header-text: #000;
+$sub-title-text: #8E8E8E;
+$main-text: #3D3D3D;
+$border-color: #EEEEEE;
+
+$default-font: "Inter", sans-serif;
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 20px;
+$grid-gutter-width: 30px;
 $gutter: $grid-gutter-width;
 
 // // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
 // // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
 // // Default variables: node_modules/bootstrap/scss/_variables.scss
 // $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 576px, md: 768px, lg: 992px, xl: 1300px);
