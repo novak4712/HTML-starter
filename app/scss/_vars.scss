@@ -2,6 +2,7 @@
 $accent: #00C6D5; ;
 $white: #fff;
 $header-text: #000;
+$black: #000;
 $sub-title-text: #8E8E8E;
 $main-text: #3D3D3D;
 $border-color: #EEEEEE;
@@ -19,5 +20,5 @@ $gutter: $grid-gutter-width;
 
 $grid-gutter-width: 30px;
 $grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 576px, md: 768px, lg: 992px, xl: 1300px);
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 1030px, xl: 1290px);
+$container-max-widths: (sm: 576px, md: 768px, lg: 1030px, xl: 1300px);

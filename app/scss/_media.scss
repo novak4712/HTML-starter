@@ -5,10 +5,28 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .steps-wrapper {
+    gap: 30px;
+    .step {
+      max-width: 200px;
+      padding: 5px;
+      .step-img{
 
+      }
+      .step-text{
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .separator {
+      width: 100px;
+    }
+
+  }
 }
 
-// ≥992px
+// ≥1030px
 @include media-breakpoint-down(md) {
   header {
     nav {
@@ -117,17 +135,235 @@
 
 
   }
+  .head-info{
+    .head-info-header{
+      font-size: 48px;
+      line-height: 62px;
+      padding: 52px 0 10px;
+    }
+    .head-info-text{
+      font-size: 18px;
+      line-height: 20px;
+      padding-bottom: 52px;
+    }
+  }
+  .steps-wrapper {
+    gap: 30px;
+    .step {
+      max-width: 200px;
+      padding: 5px;
+      .step-img{
+
+      }
+      .step-text{
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .separator {
+      width: 100px;
+    }
+    .step-row-3 {
+      display: block;
+    }
+    .step-row-2{
+      display: none;
+    }
+  }
+  .sub-title{
+    font-size: 12px;
+  }
+  .section-header{
+    font-size: 32px;
+  }
+  .info-card-wrapper {
+    .info-card {
+      max-width: 300px;
+    }
+  }
+  .portfolio-slider{
+    .portfolio-slider-item {
+
+      .portfolio-slider-item-header {
+        font-size: 30px;
+        margin-bottom: 38px;
+      }
+
+      .portfolio-slider-text-wrapper {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+        .portfolio-slider-text-item {
+          max-width: 300px;
+          width: 50%;
+          .portfolio-slider-text-title {
+            font-size: 18px;
+            line-height: 30px;
+          }
+          .portfolio-slider-text-content {
+            font-size: 14px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    .slick-prev.slick-arrow {
+      width: 50px;
+      height: 50px;
+      top: -60px;
+      left: inherit;
+      right: 60px;
+    }
+    .slick-next.slick-arrow {
+      width: 50px;
+      height: 50px;
+      top: -60px;
+    }
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  .head-info{
+    .head-info-header{
+      font-size: 32px;
+      line-height: 48px;
+      padding: 42px 0 10px;
+    }
+    .head-info-text{
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 42px;
+    }
+  }
+  .steps-wrapper {
+    gap: 30px;
+    .step {
+      max-width: 190px;
+      padding: 5px;
+      .step-img{
 
+      }
+      .step-text{
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .separator {
+      width: 80px;
+    }
+    .step-row-3 {
+      display: block;
+    }
+    .step-row-2{
+      display: none;
+    }
+  }
+  .section-header{
+    font-size: 28px;
+  }
+  .info-card-wrapper {
+    .info-card {
+      max-width: 100%;
+    }
+  }
+  .portfolio-slider{
+    .portfolio-slider-item {
+
+      .portfolio-slider-item-header {
+        font-size: 30px;
+        line-height: 26px;
+        margin-bottom: 38px;
+      }
+
+      .portfolio-slider-text-wrapper {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+        .portfolio-slider-text-item {
+          max-width: 300px;
+          width: 100%;
+          .portfolio-slider-text-title {
+            font-size: 18px;
+            line-height: 30px;
+          }
+          .portfolio-slider-text-content {
+            font-size: 14px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .head-info{
+    .head-info-header{
+      font-size: 26px;
+      line-height: 42px;
+      padding: 32px 0 10px;
+    }
+    .head-info-text{
+      font-size: 14px;
+      line-height: 18px;
+      padding-bottom: 32px;
+    }
+  }
+  .technology-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    .technology-slider-item {
+      width: 25%;
+    }
+  }
+  .steps-wrapper {
+    gap: 30px;
+    justify-content: center;
+    .step {
+      max-width: 300px;
+      padding: 5px;
+      .step-img{
+
+      }
+      .step-text{
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 190px;
+      }
+    }
+
+    .separator {
+      display: none;
+    }
+
+  }
+  section{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .portfolio-slider{
+    margin-top: 60px;
+    .portfolio-slider-item {
+
+      .portfolio-slider-item-header {
+        font-size: 26px;
+        margin-bottom: 38px;
+      }
+
+    }
+  }
 }
+
 
 
 /*==========  Mobile First  ==========*/

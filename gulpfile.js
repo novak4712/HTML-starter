@@ -42,6 +42,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js', //
+		'node_modules/slick-carousel/slick/slick.min.js', // Slick-slider
+		'node_modules/jquery-validation/dist/jquery.validate.min.js', // jquery-validation
 		'app/js/_lazy.js', // JS library plug-in example
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
