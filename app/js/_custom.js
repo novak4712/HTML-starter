@@ -110,19 +110,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     async function sendMail(form) {
+        let msg = '';
+        let status = '';
+        $("#form").addClass('sending');
         const formData = new FormData(form);
         const response = await fetch('sendmail.php', {
             method: 'POST',
             body: formData
         });
         const data = await response.json();
-        console.log(data);
-        if (response.ok) {
-            console.log('mail send');
+        console.log('data',data);
+        msg = data.message;
+        status = data.status;
+
+
+
+        if (status === 'success') {
             form.reset();
         } else {
-            console.log('mail not send')
+
         }
+        $(".response").html(msg);
+        $(".response").addClass(status);
+
+
+        $("#form").removeClass('sending');
     }
 
 });

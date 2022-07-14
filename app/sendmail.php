@@ -18,7 +18,7 @@ $mail = new PHPMailer(true);
 try {
     $mail->CharSet = 'UTF-8';
     //Server settings
-    $mail->SMTPDebug = 1;                      //Enable verbose debug output
+    //$mail->SMTPDebug = 1;                      //Enable verbose debug output
     $mail->isSMTP();
     $mail->Mailer = "smtp";                                    //Send using SMTP
     $mail->Host = 'smtp.yandex.ru';                     //Set the SMTP server to send through
@@ -31,6 +31,9 @@ try {
 
     //Recipients
     $mail->setFrom('info@weisstechsoft.de', 'Mailer');
+    $mail->addAddress('info@weisstechsoft.de', 'User');     //Add a recipient
+    $mail->addAddress('ivan.lapsha@weisstechsoft.de', 'User');     //Add a recipient
+    $mail->addAddress('andrei.iziumets@weisstechsoft.de', 'User');     //Add a recipient
     $mail->addAddress('novak4803@gmail.com', 'User');     //Add a recipient
 
     $name = $phone = $email = $country = $message = "";
@@ -80,10 +83,12 @@ try {
 
     $mail->send();
     $message = 'Message has been sent';
+    $status = 'success';
 } catch (Exception $e) {
     $message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    $status = 'error';
 }
-$response = ['message' => $message];
+$response = ['message' => $message, 'status' => $status];
 
 header('Content-type: application/json');
 echo json_encode($response);
